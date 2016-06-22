@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 
 <head>
@@ -19,6 +21,23 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript" src="js/soundmanager2-jsmin.js"></script>
+<script type="text/javascript" src="js/jquery.julienMP3Player.js"></script>
+
+<script type="text/javascript">
+  var SM2_DEFER = true;
+  $(function(){
+    $('#player').julienMP3Player({
+      soundManagerSwfURL: './music/',
+      soundManagerFlashLoadTimeout: 4000,
+      soundManagerDebug: false,
+      autoplay: true
+    });
+  });
+</script>
     <title>遊園--依聲共遊</title>
 </head>
 
@@ -85,12 +104,15 @@
     </div>
 
 
-    <div id="content">
+    <div id="content" >
         <div class="row">
             <div class="col-md-12" id="text">
-                <audio id="audio" controls>
-                    <source id="mp3Source" src="music/ZhangZhiHuangCUT01.mp3" type="audio/mp3"> Your browser does not support the audio element.
-                </audio>
+                <ul id="player">
+    <li><a title="張志紅演唱01" href="music/ZhangZhiHuangCUT01.mp3"></a></li>
+    <li><a title="張志紅演唱02" href="music/ZhangZhiHuangCUT02.mp3"></a></li>
+    <li><a title="張志紅演唱03" href="music/ZhangZhiHuangCUT03.mp3"></a></li>
+  </ul> 
+                
                 <h1 id="message">主訊息</h1>
                 <div>
                     <button class="btn btn-lg btn-primary" id="yesButton">按鈕一文字</button>

@@ -31,7 +31,8 @@ $(function () {
                     noButtonMessage: "4恰三春好處無人見",
                     yesButtonShow: true,
                     noButtonShow: true,
-                    position: 25
+                    position: 25,
+                    music: ("src","music/ZhangZhiHuangCUT02.mp3")
                 };
             }
 
@@ -44,7 +45,8 @@ $(function () {
                     noButtonMessage: "6閒庭院",
                     yesButtonShow: true,
                     noButtonShow: true,
-                    position: 25
+                    position: 25,
+                    music:("src","music/ZhangZhiHuangCUT03.mp3")
                 };
             } else {
                 currentScene = 5;
@@ -86,9 +88,14 @@ $(function () {
 
     // 繪製畫面的函數
     function render(music) {
-        $("#mp3Source").attr("src", "music/" + currentMusic + ".mp3");
+        $("#mp3Source1").attr("src", "music/ZhangZhiHuangCUT01.mp3" + currentMusic + ".mp3");
+        $("#mp3Source2").attr("src", "music/ZhangZhiHuangCUT02.mp3" + currentMusic + ".mp3");
+        $("#mp3Source3").attr("src", "music/ZhangZhiHuangCUT03.mp3" + currentMusic + ".mp3");
 
     }
+     
+  
+    
 
     function render(scene) {
         $message.text(scene.message);
