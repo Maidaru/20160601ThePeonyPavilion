@@ -208,7 +208,7 @@ header img{
 }
 
 .container02,
-.container04 p{
+.container04 {
     font-family: cwtexfangsong;
     color: black;
     font-size: 15pt;
@@ -216,7 +216,9 @@ header img{
 
 .container02,
 .container04 a{
-    color: ;
+    color: blue;
+    font-size: 20pt;
+    margin-right: 10pt;
 }
 
 
