@@ -14,6 +14,7 @@ nav {
     background-color: white;
     text-align: center;
     font-family: cwtexfangsong;
+    color: aliceblue;
 }
 
 nav li {
@@ -125,6 +126,7 @@ h1,
     margin: 3%;
     font-family: cwtexfangsong;
 }
+
 
 
 /*設定footer*/
