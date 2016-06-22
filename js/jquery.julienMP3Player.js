@@ -6,7 +6,7 @@
     autoplay: false,
     playNextSoundOnFinish: true,
     hideTrackDetailsAfterPlay: 3, /* N (Number) seconds, or false (Boolean) to always show it */
-    soundManagerSwfURL: './swf/', /* path (String), relative to your html page that contains the SWF files that are needed by SoundManager2 */
+    soundManagerSwfURL: './music/', /* path (String), relative to your html page that contains the SWF files that are needed by SoundManager2 */
     soundManagerDebug: false, /* if true, displays the SoundManager2 debug info into the page and in the console */
     soundManagerHandleFlashBlock: true,
     soundManagerHTML5Audio: true,
