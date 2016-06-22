@@ -14,7 +14,6 @@ nav {
     background-color: white;
     text-align: center;
     font-family: cwtexfangsong;
-    color: black;
 }
 
 nav li {
@@ -127,6 +126,9 @@ h1,
     font-family: cwtexfangsong;
 }
 
+.list-unstyled a{
+    color: black;
+}
 
 
 /*設定footer*/
