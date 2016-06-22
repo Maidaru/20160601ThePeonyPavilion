@@ -136,7 +136,7 @@ $(function () {
 
      // 當按下Yes的時候 scene往右移
     $yesButton.on('click',function() {
-         $("#scene").animate({moveForward:'25px'}, 2000,
+         $("#scene").animate({right:'30px'}, 2000,
             function(){
              
          });
