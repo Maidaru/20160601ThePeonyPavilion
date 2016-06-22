@@ -76,13 +76,6 @@ nav i{
     display: inline-flex;
 }/* 小倒三角形，可是無法弄到在文字正中間→用display:inline-flex，字放大後又跑掉了*/
 
-.caret02{
-   border-style:solid;
-   border-width: 4px;
-   border-color: transparent transparent transparent azure;
-   display: inline-block;
-}
-
 .dropdown-toggle {
     position: relative;
     display: block;
@@ -105,14 +98,10 @@ ul.navbar:hover ul.dropdown-menu {
     line-height: normal;
     vertical-align: middle;
     color: azure;
-    font-size: 16pt;
 }
 
 .yamm-content img{
     width: 100%;
-}
-.yamm-content a{
-    font-size: 16pt;
 }
 
 .subnav .caret{
@@ -132,155 +121,131 @@ ul.navbar:hover ul.dropdown-menu {
     
 }
 
-.nav03-discription01{
-    padding-top: 15vh;
-    font-size: 16pt;
-}
-
-.nav03-discription02{
-    padding-top: 10px;
-    font-size: 16pt;
-}
 
 
-/*    設定header*/
-
-.background {
-    width: 80%;
-    background-color: white;
-    margin: auto;
-}
-
-header{
-    margin-top: 50px;
+header {
     width: 100%;
-    font-family: cwtexfangsong;
-    font-size: 20px;
+    height: 400px;
     text-align: center;
-    background: url();
+    color: white;
+    background-image: url(../img/QianYi.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    color: black;
-}
-
-header img{
-    width: 80%;
-}
-
-.slide-description {
-    width: 100%;
-    margin-top: 0;
-    padding: 20px;
-    text-align: center;
-}
-
-
-/*     設定 container*/
-.container,
-.container-fluid{
-    margin: 0 auto;
-    overflow: auto;
-}
-
-.container{
-    width: 80%;
-    }
-
-.container-fluid{
-    width: 100%;
 }
 
 .container03{
-    width: 80vw;
-    text-align: right;
-    margin-left: 10vw;
+    width: 80%;
+    background-image:url(../img/WenYuHan.jpg);
 }
 
-.container03 p{
-    line-height: 30px;
-    font-family: cwtexfangsong;
-    -webkit-writing-mode: vertical-lr;
-        writing-mode: vertical-lr;
-    -webkit-writing-mode: vertical-rl;
-        writing-mode: vertical-rl;
-    padding-top: 3vh;
-    margin-right: 0;    
+header h1 {
+    margin-top: 200px;
+    font-size: 50px;
 }
 
-.container02,
-.container04 p{
-    font-family: cwtexfangsong;
-    color: black;
-    font-size: 15pt;
-}
-
-.container02,
-.container04 a{
-    color: ;
-}
-
-
-/*     設定 thumbnail*/
-.thumbnail{
-    
-}
-
-.thumbnail img{
+.container1,
+.container-fluid {
+    margin: 0 auto;
+    overflow: auto;
     width: 100%;
 }
 
-
-/*     設定超連結*/
-nav a{
-    color: azure;
+.content1,
+.content2,
+.content3,
+.content4,
+.content5 {
+    padding-top: 40px;
+    padding-right: 40px;
+    background-color: #4D4048;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
 }
 
-a,
-a:hover,
-a:visited,
-a:active {
-    text-decoration: none;
-    font-family: cwtexfangsong; 
+.content1 {
+    background-image: url(../img/1.png);
 }
 
-nav a:hover {
-    background-color: #90C3D4;
+.content2 {
+    background-image: url(../img/2.png);
 }
 
-nav a:visited {
-    background-color: #94D1AE;
+.content3 {
+    background-image: url(../img/3.png);
 }
 
+.content4 {
+    background-image: url(../img/4.png);
+}
+
+.content5 {
+    background-image: url(../img/5.png);
+}
+
+.content1 p,
+.content2 p,
+.content3 p,
+.content4 p,
+.content5 p {
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    color: white;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-left: auto;
+}
 
 
 /*     設定 footer*/
+
 footer {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background-color: #4D4048;
+    background-color: #000;
     color: #eee;
 }
 
 
+/*     設定超連結*/
+
+nav a {
+    color: azure;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 /*    icon來源設定*/
-@import
-url(https://fonts.googleapis.com/icon?family=Material+Icons)
 
-
-
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons)
 /*    字型來源設定*/
+
+
 /*    思源黑體Noto Sans TC*/
+
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 /*    仿宋體cwTeXFangSong*/
+
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
 /*    楷體cwTeXKai*/
+
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
 
-
-
 /*     設定RWD：手機、平板、電腦 */
+
+
 /* 行動裝置 */
+
 @media screen and (max-width:767px) {
     .col-xs-1 {
         width: calc(100% * 1 / 12);
@@ -320,7 +285,9 @@ url(https://fonts.googleapis.com/icon?family=Material+Icons)
     }
 }
 
+
 /* 平板電腦 */
+
 @media screen and (min-width:768px) and (max-width:991px) {
     .col-sm-1 {
         width: calc(100% * 1 / 12);
@@ -360,7 +327,9 @@ url(https://fonts.googleapis.com/icon?family=Material+Icons)
     }
 }
 
+
 /* 中等以上螢幕 */
+
 @media screen and (min-width:992px) {
     .col-md-1 {
         width: calc(100% * 1 / 12);
@@ -397,8 +366,5 @@ url(https://fonts.googleapis.com/icon?family=Material+Icons)
     }
     .col-md-12 {
         width: calc(100% * 12 / 12);
-    }
-    .container {
-        width: 80%;
     }
 }
