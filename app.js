@@ -153,7 +153,8 @@ $(function () {
         $("#scene").animate({left:'10px'}, 2000);
     });
     
+    // 音樂播放
     
-    render(scene);
+    
    
 });

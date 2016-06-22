@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
-    
+<!--musicplay jquery-->    
     <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
 <script type="text/javascript" src="js/soundmanager2-jsmin.js"></script>
@@ -34,10 +34,11 @@
       soundManagerSwfURL: './music/',
       soundManagerFlashLoadTimeout: 4000,
       soundManagerDebug: false,
-      autoplay: true
+      autoplay: false
     });
   });
-</script>
+</script><!--End of musicplay jquery-->
+   
     <title>遊園--依聲共遊</title>
 </head>
 
@@ -113,10 +114,10 @@
     <li><a title="張志紅演唱03" href="music/ZhangZhiHuangCUT03.mp3"></a></li>
   </ul> 
                 
-                <h1 id="message">主訊息</h1>
+                <h1 id="message">與杜麗娘一同遊園</h1>
                 <div>
-                    <button class="btn btn-lg btn-primary" id="yesButton">按鈕一文字</button>
-                    <button class="btn btn-lg btn-primary" id="noButton">按鈕二文字</button>
+                    <button class="btn btn-lg btn-primary" id="yesButton">說明</button>
+                    <button class="btn btn-lg btn-primary" id="noButton">開始</button>
                 </div>
             </div>
         </div>
